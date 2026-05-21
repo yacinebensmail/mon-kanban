@@ -1,16 +1,45 @@
-# React + Vite
+# 📋 KanbanRT - User Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bonjour
 
-Currently, two official plugins are available:
+Un tableau de bord sécurisé développé en React permettant la gestion d'utilisateurs avec un système d'authentification complet.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Liens du projet
+- **Déploiement en direct :** [Colle ton lien Vercel ici, ex: https://mon-kanban-xyz.vercel.app]
+- **Dépôt GitHub :** [Colle le lien de ton repo GitHub ici]
 
-## React Compiler
+## 🛠️ Technologies utilisées
+- **Frontend :** React.js, Vite, React Router DOM
+- **Backend as a Service (BaaS) :** Supabase (PostgreSQL, Authentification)
+- **Hébergement :** Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Fonctionnalités
+- **Authentification :** Inscription et connexion sécurisées via Supabase Auth.
+- **Protection des routes :** Redirection automatique si l'utilisateur n'est pas connecté.
+- **Base de données en temps réel :** - Affichage de la liste des utilisateurs inscrits.
+  - Ajout de nouveaux utilisateurs depuis le tableau de bord.
+  - Suppression d'utilisateurs.
 
-## Expanding the ESLint configuration
+## 🚀 Installation en local
+Pour faire tourner ce projet sur votre machine :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clonez le dépôt :
+\`\`\`bash
+git clone [Colle le lien de ton repo GitHub ici]
+\`\`\`
+
+2. Installez les dépendances :
+\`\`\`bash
+npm install
+\`\`\`
+
+3. Configurez les variables d'environnement en créant un fichier \`.env.local\` à la racine :
+\`\`\`text
+VITE_SUPABASE_URL=votre_url_supabase
+VITE_SUPABASE_ANON_KEY=votre_cle_publique_supabase
+\`\`\`
+
+4. Lancez le serveur de développement :
+\`\`\`bash
+npm run dev
+\`\`\`
